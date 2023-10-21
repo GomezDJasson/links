@@ -64,6 +64,9 @@ h1, h2{
 footer{
     text-align: center;
 }
+footer small{
+    padding-bottom: 10px;
+}
 /*ANIMATIONS*/
 @keyframes logo {
     from {opacity: .5; }
