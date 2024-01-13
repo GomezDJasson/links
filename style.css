@@ -4,22 +4,17 @@
 }
 html{
     background: linear-gradient(130deg, rgb(147, 29, 8), rgb(30, 15, 97));
+    box-sizing: border-box;
 }
 section img{ 
-    width: 130px;
-    border-radius: 20%;
-    opacity: .5;
-    animation: logo 3s linear infinite alternate;
+    width: 150px;
 }
 .titles{
     margin: 20px;
+    text-align: center;
 }
 .titles h1{
-    font-size: 4em;
-    color: #ffffff;
-}
-.titles h2{
-    font-size: 2em;
+    font-size: 3em;
     color: #ffffff;
 }
 .container{
@@ -28,19 +23,24 @@ section img{
     align-items: center;
     justify-content: center;
     margin: 15px;
+    padding: 15px;
     flex-direction: column;
 }
 .socialnetworks-inline i{
-    font-size: 40px;
+    font-size: 100px;
     margin: 15px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #CCC;
 }
-.socialnetworks-inline{ flex-direction: row; }
-.socialnetworks-inline > *{
-    padding-right: 15px;
+.socialnetworks-inline{ 
+    flex-direction: row; 
 }
+
 .socialnetworks a{
     padding: 20px 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 250px;
     background-color: #d90f5a;
     border:1px solid #ffffff;
@@ -58,43 +58,24 @@ section img{
     cursor: pointer;
     color:#ffffff;
 }
-h1, h2{
-    text-align: center;
-}
 footer{
     text-align: center;
+    margin: 20px;
 }
-footer small{
-    padding-bottom: 10px;
-}
-/*ANIMATIONS*/
-@keyframes logo {
-    from {opacity: .5; }
-    to {opacity: 1; }
-}
-@keyframes typing {
-    from {width: 0; }
-    to {width: 33%; }
-}
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-@media (min-width:961px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    @keyframes typing {
-        from {width: 0; }
-        to {width: 7%; }
-    }
-}
+
 @media (max-width: 640px){
+    .container{
+        margin: 10px;
+    }
     .socialnetworks-inline{ 
         display: flex;
+        flex-wrap: wrap;
+    }
+    .socialnetworks-inline i{ 
+        font-size: 40px;
     }
     .titles h1{
-        font-size: 3em;
-    }
-    .titles h2{
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .socialnetworks a{
         font-size: 1.5em;
