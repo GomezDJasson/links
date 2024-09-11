@@ -17,6 +17,10 @@ section img{
     font-size: 3em;
     color: #ffffff;
 }
+.titles h2{
+    font-size: 2em;
+    color: #ffffff;
+}
 .container{
     display: flex;
     flex-direction: row;
