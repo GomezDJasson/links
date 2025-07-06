@@ -8,6 +8,7 @@ html{
 }
 section img{ 
     width: 150px;
+    border-radius: 50%;
 }
 .titles{
     margin: 20px;
