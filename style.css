@@ -8,8 +8,10 @@ html{
 }
 section img{ 
     width: 150px;
-    border-radius: 50%;
 }
+.logo img{
+    border-radius: 50%;
+        }
 .titles{
     margin: 20px;
     text-align: center;
