@@ -41,6 +41,10 @@ section img{
     border-radius: 10px;
     box-shadow: 2px 2px 2px #CCC;
 }
+.socialnetworks-inline i:hover{
+    cursor: pointer;
+    font-size: 150px;
+        }
 .socialnetworks-inline{ 
     flex-direction: row; 
 }
