@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Fredoka', system-ui, sans-serif;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #050510; }
+body { margin: 0; min-width: 320px; background: #050510; }
+a { -webkit-tap-highlight-color: transparent; }
+
+.scene { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+.scene::before {
+  content: ''; position: absolute; inset: -20%;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(104, 44, 255, .17), transparent 27%),
+    radial-gradient(circle at 12% 78%, rgba(239, 42, 142, .12), transparent 24%),
+    radial-gradient(circle at 88% 70%, rgba(31, 106, 255, .13), transparent 25%);
+}
+.orb { position: absolute; border: 1px solid rgba(122, 92, 255, .35); border-radius: 999px; filter: blur(.2px); }
+.orb-one { width: 230px; height: 230px; top: -100px; left: -80px; box-shadow: 0 0 70px rgba(239, 42, 142, .2); }
+.orb-two { width: 160px; height: 160px; right: -80px; top: 16%; box-shadow: 0 0 70px rgba(40, 90, 255, .2); }
+.orb-three { width: 320px; height: 120px; left: -100px; bottom: -30px; transform: rotate(18deg); box-shadow: 0 0 80px rgba(239, 42, 142, .18); }
+.orbit { position: absolute; border: 1px solid rgba(118, 83, 255, .16); border-radius: 50%; }
+.orbit-one { width: 760px; height: 330px; left: 50%; top: 36%; transform: translate(-50%, -50%) rotate(-8deg); }
+.orbit-two { width: 680px; height: 260px; left: 50%; top: 38%; transform: translate(-50%, -50%) rotate(9deg); border-color: rgba(20, 169, 255, .12); }
+.spark { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #8b5cf6; box-shadow: 0 0 14px #8b5cf6; }
+.spark-one { top: 24%; left: 14%; }.spark-two { top: 38%; right: 13%; background: #22d3ee; box-shadow: 0 0 14px #22d3ee; }.spark-three { top: 63%; left: 8%; }.spark-four { bottom: 19%; right: 17%; background: #f472b6; box-shadow: 0 0 14px #f472b6; }
+
+.social-orbit { position: absolute; inset: 9% -8% 8%; border: 1px solid rgba(119, 75, 255, .25); border-radius: 50%; transform: rotate(-7deg); pointer-events: none; }
+.social-tile { position: relative; z-index: 1; display: flex; min-height: 145px; flex-direction: column; align-items: center; justify-content: center; border-radius: 26px; border: 1px solid rgba(139, 92, 246, .35); background: rgba(9, 9, 25, .55); backdrop-filter: blur(12px); box-shadow: inset 0 1px rgba(255,255,255,.06), 0 18px 45px rgba(0,0,0,.28); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease; }
+.social-tile:hover, .social-tile:focus-visible { transform: translateY(-8px) scale(1.035); border-color: rgba(255,255,255,.5); background: rgba(19, 15, 42, .72); box-shadow: 0 0 34px var(--glow), 0 20px 55px rgba(0,0,0,.4); outline: none; }
+.social-icon { display: grid; width: 68px; height: 68px; place-items: center; border-radius: 20px; font-size: 35px; background: rgba(12,12,30,.8); box-shadow: 0 0 25px var(--glow); }
+.social-line { width: 25px; height: 3px; margin-top: 7px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 10px var(--glow); }
+.social-instagram { --accent: #f472b6; --glow: rgba(236,72,153,.5); }.social-instagram .social-icon { color: #f472b6; }
+.social-facebook { --accent: #60a5fa; --glow: rgba(37,99,235,.5); }.social-facebook .social-icon { color: #60a5fa; }
+.social-tiktok { --accent: #22d3ee; --glow: rgba(34,211,238,.45); }.social-tiktok .social-icon { color: #fff; }
+.social-x { --accent: #cbd5e1; --glow: rgba(148,163,184,.35); }.social-x .social-icon { color: #fff; }
+.social-youtube { --accent: #fb7185; --glow: rgba(244,63,94,.45); }.social-youtube .social-icon { color: #fb7185; }
+.social-threads { --accent: #c084fc; --glow: rgba(168,85,247,.5); }.social-threads .social-icon { color: #fff; }
+
+.section-line { width: 70px; height: 1px; background: linear-gradient(90deg, transparent, rgba(168,85,247,.75)); }
+.section-line:last-child { transform: rotate(180deg); }
+.shop-card { display: flex; align-items: center; gap: 20px; min-height: 126px; padding: 20px 24px; border: 1px solid rgba(217,70,239,.5); border-radius: 28px; background: linear-gradient(100deg, rgba(217,70,239,.12), rgba(37,99,235,.13)); box-shadow: inset 0 1px rgba(255,255,255,.07), 0 0 38px rgba(139,92,246,.12); transition: transform .25s ease, box-shadow .25s ease; }
+.shop-card:hover, .shop-card:focus-visible { transform: translateY(-4px); box-shadow: 0 0 45px rgba(217,70,239,.22), inset 0 1px rgba(255,255,255,.1); outline: none; }
+.shop-art { display: grid; width: 82px; height: 82px; flex: 0 0 82px; place-items: center; border-radius: 22px; color: #d8b4fe; background: radial-gradient(circle, rgba(217,70,239,.3), rgba(37,99,235,.12)); box-shadow: 0 0 28px rgba(217,70,239,.3); }
+.shop-arrow { display: grid; width: 50px; height: 50px; flex: 0 0 50px; place-items: center; border: 1px solid rgba(192,132,252,.7); border-radius: 50%; color: #e9d5ff; transition: transform .2s ease; }
+.group:hover .shop-arrow { transform: translate(3px,-3px); }
+.contact-pill, .contact-mail { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.contact-pill { padding: 11px 20px; border: 1px solid; }
+.contact-pill:hover, .contact-mail:hover { transform: translateY(-2px); }
+.contact-whatsapp { border-color: rgba(34,197,94,.7); background: rgba(34,197,94,.1); color: #86efac; box-shadow: 0 0 22px rgba(34,197,94,.1); }
+.contact-telegram { border-color: rgba(14,165,233,.7); background: rgba(14,165,233,.1); color: #7dd3fc; box-shadow: 0 0 22px rgba(14,165,233,.1); }
+.contact-mail { margin-top: 14px; padding: 10px 24px; border: 1px solid rgba(168,85,247,.55); color: #ddd6fe; background: rgba(124,58,237,.08); }
+
+@media (max-width: 640px) {
+  .social-orbit { inset: 7% -12% 6%; }
+  .social-tile { min-height: 132px; border-radius: 22px; }
+  .social-icon { width: 60px; height: 60px; border-radius: 18px; font-size: 30px; }
+  .shop-card { padding: 16px; gap: 14px; }
+  .shop-art { width: 66px; height: 66px; flex-basis: 66px; }
+  .shop-arrow { width: 42px; height: 42px; flex-basis: 42px; }
+  .section-line { width: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
