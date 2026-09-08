@@ -6,7 +6,7 @@ import {
   FaXTwitter,
   FaThreads,
   FaWhatsapp,
-  FaTelegramPlane,
+  FaTelegram,
 } from 'react-icons/fa6'
 import { ArrowUpRight, Mail, ShoppingBag, Sparkles } from 'lucide-react'
 
@@ -108,7 +108,7 @@ function App() {
               <FaWhatsapp /> WhatsApp
             </a>
             <a className="contact-pill contact-telegram" href="https://t.me/nerdybles" target="_blank" rel="noreferrer">
-              <FaTelegramPlane /> Telegram
+              <FaTelegram /> Telegram
             </a>
           </div>
           <a className="contact-mail" href="mailto:fgmcollectors@gmail.com">
