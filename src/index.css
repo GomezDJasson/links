@@ -260,7 +260,7 @@ a { -webkit-tap-highlight-color: transparent; }
     height: 64px;
     font-size: 31px;
   }
-  .social-icon { width: 60px; height: 60px; border-radius: 18px; font-size: 30px; }
+
   .shop-card { padding: 16px; gap: 14px; }
   .shop-art { width: 66px; height: 66px; flex-basis: 66px; }
   .shop-arrow { width: 42px; height: 42px; flex-basis: 42px; }
