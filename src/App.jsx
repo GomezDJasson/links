@@ -40,7 +40,7 @@ function App() {
             <div className="flex h-[88%] w-[88%] items-center justify-center rounded-full border border-cyan-300/40 bg-gradient-to-br from-fuchsia-500/20 via-violet-500/10 to-cyan-400/20">
               <span className="text-5xl drop-shadow-[0_0_18px_rgba(168,85,247,.9)]">
                 <img
-                  src="public/assets/nerdbot-logo.jpg"
+                  src="./assets/nerdbot-logo.jpg"
                   alt="Nerdybles"
                   className="h-full w-full rounded-full object-contain"
                 />
