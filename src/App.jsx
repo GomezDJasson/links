@@ -117,7 +117,7 @@ function App() {
               <FaTelegram /> Telegram
             </a>
           </div>
-          <a className="contact-mail" href="mailto:fgmcollectors@gmail.com">
+          <a className="contact-mail" href="mailto:nerdybles@gmail.com">
             <Mail size={17} /> Contáctanos
           </a>
         </section>
