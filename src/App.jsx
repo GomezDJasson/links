@@ -125,7 +125,7 @@ function App() {
         <footer className="mt-auto pt-16 text-center text-xs text-slate-500">
           <div className="mx-auto mb-5 h-px max-w-sm bg-gradient-to-r from-transparent via-violet-500/50 to-transparent" />
           <p>© {new Date().getFullYear()} Nerdybles. Todos los derechos reservados.</p>
-          <p className="mt-1">Diseñado por <a className="text-slate-300 underline decoration-violet-500/70 underline-offset-2" href="https://gomezdjasson.github.io/portafolio/">Gomez D. Jasson</a></p>
+          <p className="mt-1">Diseñado por <a className="text-slate-300 underline decoration-violet-500/70 underline-offset-2" href="https://portafolio-jasson.vercel.app/">Gomez D. Jasson</a></p>
         </footer>
       </div>
     </main>
